@@ -2,8 +2,9 @@
 
 ## Overview
 
-* [My Awesome API](README.md)
+* [BUSTLE ACTIVITY MACHINE](README.md)
 
 ## Methods
 
 * [Defining Methods](methods.md)
+
