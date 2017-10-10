@@ -2,6 +2,12 @@
 
 The API for interacting with activities is defined below. The interface is RESTful most of the way.
 
+The supported properties on activites are:
+
+ * `name: String`
+ * `start: Int` - unix epoch
+ * `stop: Int`
+
 {% method %}
 ## Creating an activity
 
@@ -73,7 +79,7 @@ Or the short-hand version.
 curl -X PUT .../v1/activity/0xab6/c/0xab5
 ```
 
-For a complete list of relations see the [Relations](#relations) section.
+For a complete list of relations see the [Relations](content/relations.html) section.
 
 {% endmethod %}
 

@@ -6,6 +6,6 @@
 
 ## API
 
-* [Activities](methods.md)
+* [Activity](methods.md)
 * [Relations](relations.md)
 
