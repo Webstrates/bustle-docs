@@ -4,7 +4,8 @@
 
 * [BUSTLE ACTIVITY MACHINE](README.md)
 
-## Entities
+## API
 
 * [Activities](methods.md)
+* [Relations](relations.md)
 
