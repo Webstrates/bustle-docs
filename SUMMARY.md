@@ -4,7 +4,7 @@
 
 * [BUSTLE ACTIVITY MACHINE](README.md)
 
-## Methods
+## Entities
 
-* [Defining Methods](methods.md)
+* [Activities](methods.md)
 
