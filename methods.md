@@ -1,31 +1,37 @@
-# Defining Methods
+# Activities
 
-Methods allow you to smoothly display code examples in different languages.
+The API for interacting with activities is defined below.
 
 {% method %}
-## My first method
+## Creating an activity
+
+A `name` is the only required property for creating an activity.
+
+{% sample lang="bash" %}
+A simple post to `v1/activity` will create a new activity.
+
+
+```bash
+curl -X POST .../v1/activity -d "{ 'name': 'My Activity'}"
+```
+
+{% endmethod %}
+
+{% method %}
+## Deleting
 
 My first method exposes how to print a message in JavaScript and Go.
 
-{% sample lang="js" %}
-Here is how to print a message to `stdout` using JavaScript.
+{% sample lang="bash" %}
+A simple post to `v1/activity` will create a new activity.
 
-
-```js
-console.log('My first method');
-```
-
-{% sample lang="go" %}
-Here is how to print a message to `stdout` using Go.
-
-```go
-fmt.Println("My first method")
-```
-
-{% common %}
-Whatever language you are using, the result will be the same.
 
 ```bash
-$ My first method
+curl -X POST .../v1/activity -d "{ 'name': 'My Activity'}"
 ```
+
 {% endmethod %}
+
+
+
+
