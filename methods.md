@@ -1,18 +1,18 @@
 # Activities
 
-The API for interacting with activities is defined below.
+The API for interacting with activities is defined below. The interface is RESTful most of the way.
 
 {% method %}
 ## Creating an activity
 
-A `name` is the only required property for creating an activity.
+Creating an activity is is done in an HTTP POST request. A `name` is the only required property for creating an activity. 
 
 {% sample lang="bash" %}
-A simple post to `v1/activity` will create a new activity.
-
+A simple POST to `v1/activity` will create a new activity. The newly created activity will contain an id.
 
 ```bash
-curl -X POST .../v1/activity -d "{ 'name': 'My Activity'}"
+$ curl -X POST .../v1/activity -d "{ 'name': 'My Activity'}"
+{ 'name': 'My activity', 'id': '0xab6' }
 ```
 
 {% endmethod %}
@@ -20,17 +20,62 @@ curl -X POST .../v1/activity -d "{ 'name': 'My Activity'}"
 {% method %}
 ## Deleting
 
-My first method exposes how to print a message in JavaScript and Go.
+Delete an activity via an HTTP DELETE.
 
 {% sample lang="bash" %}
-A simple post to `v1/activity` will create a new activity.
+A simple DELETE to `v1/activity/<id>` will delete the activity with id `<id>`.
 
 
 ```bash
-curl -X POST .../v1/activity -d "{ 'name': 'My Activity'}"
+curl -X DELETE .../v1/activity/0xab6
 ```
 
 {% endmethod %}
+
+{% method %}
+## Updating
+
+Update an activity via an HTTP PUT.
+
+{% sample lang="bash" %}
+A simple PUT to `v1/activity/<id>` with some JSON body content will update the activity.
+
+
+```bash
+curl -X PUT .../v1/activity/0xab6 -d "{ 'start': 1507626697 }"
+```
+
+{% endmethod %}
+
+{% method %}
+## Relating an activity
+
+Update an activity via an HTTP PUT.
+
+{% sample lang="bash" %}
+A simple PUT to `v1/activity/<id>` with some JSON body content will update the activity.
+
+
+```bash
+curl -X PUT .../v1/activity/0xab6 -d "{ 'start': 1507626697 }"
+```
+
+{% endmethod %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
