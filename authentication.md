@@ -2,6 +2,7 @@
 
 Authentication for all endpoints are done by including a token in either the header or as a query parameter.
 
+{% method %}
 {% sample lang="bash" %}
 Provide the token in the header:
 
@@ -14,5 +15,7 @@ Or in a query parameter:
 ```bash
 $ curl -X POST "...?token=<token>"
 ```
+{% endmethod %}
+
 
 
