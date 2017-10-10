@@ -24,6 +24,7 @@ $ curl -X POST .../v1/activity -d "{ 'name': 'My Activity'}"
 {% endmethod %}
 
 {% method %}
+
 ## Deleting
 
 Delete an activity via an HTTP DELETE.

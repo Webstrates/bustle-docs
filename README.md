@@ -5,4 +5,3 @@ The **bustle activity machine** is a tool for tracking activities and various re
 Activities are defined as events that are clearly designated by a start- and stop-time and having at least one individual as participant. Activities may be related to a physical place, reference a number of virtual resources. It may be retroactively defined or planned for. Activities may be manually defined or they may be automatically generated. An automatically generated activity is clearly different than a manually defined one, but may be "converted" to a manually defined \(confirmed\) activity.
 
 This document describes the API used to interact with activities.
-

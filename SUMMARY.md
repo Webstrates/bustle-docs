@@ -10,4 +10,5 @@
 * [Individual](individual.md)
 * [Resource](resource.md)
 * [Relations](relations.md)
+* [Authentication](authentication.md)
 
