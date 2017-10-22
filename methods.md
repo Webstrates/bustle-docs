@@ -84,6 +84,13 @@ For a complete list of relations see the [Relations](content/relations.html) sec
 
 {% endmethod %}
 
+{% method %}
+## Finding activities
+
+{% endmethod %}
+
+
+
 
 
 
