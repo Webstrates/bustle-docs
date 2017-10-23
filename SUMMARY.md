@@ -2,7 +2,7 @@
 
 ## Overview
 
-* [BUSTLE Activity MACHINE](README.md)
+* [BUSTLE Activity Machine](README.md)
 
 ## API
 
