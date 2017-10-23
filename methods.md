@@ -91,7 +91,7 @@ TODO
 
 {% method %}
 
-### By user
+### By individual
 
 {% endmethod %}
 
@@ -107,45 +107,8 @@ TODO
 
 {% endmethod %}
 
+{% method %}
 
+### By relation
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+{% endmethod %}
