@@ -2,7 +2,7 @@
 
 ## Overview
 
-* [BUSTLE ACTIVITY MACHINE](README.md)
+* [BUSTLE Activity MACHINE](README.md)
 
 ## API
 
@@ -11,4 +11,8 @@
 * [Resource](resource.md)
 * [Relations](relations.md)
 * [Authentication](authentication.md)
+
+## Query Language
+
+* [Bustle Query Language](query-language/bustle-query-language.md)
 
