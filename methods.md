@@ -84,14 +84,44 @@ For a complete list of relations see the [Relations](content/relations.html) sec
 
 {% endmethod %}
 
-{% method %}
+
 ## Finding activities
 
 TODO
 
+{% method %}
+
 ### By user
-dbb
+
 {% endmethod %}
+
+{% method %}
+
+### By time
+
+{% endmethod %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### 
+
 
 
 
