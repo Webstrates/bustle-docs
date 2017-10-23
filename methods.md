@@ -101,6 +101,12 @@ TODO
 
 {% endmethod %}
 
+{% method %}
+
+### By related activities
+
+{% endmethod %}
+
 
 
 
