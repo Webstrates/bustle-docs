@@ -9,6 +9,7 @@
 * [Activity](methods.md)
 * [Individual](individual.md)
 * [Resource](resource.md)
+* [Tags](tag.md)
 * [Relations](relations.md)
 * [Authentication](authentication.md)
 
