@@ -120,24 +120,20 @@ curl -X POST .../v1/find/activity/participant/all -d "{ 'participants': ['0xfo0'
 
 {% endmethod %}
 
+{% method %}
 ### By time
 
 Find activities occurring within a given time-frame.
 
-{% method %}
-#### After
-
-All activities occurring after the given time.
-
 {% sample lang="bash" %}
 ```bash
-curl -X POST .../v1/find/activity/participant/all -d "{ 'participants': ['0xfo0'] }"
+curl -X POST .../v1/find/activity/occurring -d "{ 'after': 123123123123, 'before': 123123123123 }"
 ```
 
-
-
-
 {% endmethod %}
+
+
+
 
 {% method %}
 ### By related activities
