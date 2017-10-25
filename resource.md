@@ -51,4 +51,18 @@ $ curl -X PUT .../v1/resouce/0xfo1 -d "{ 'name': 'Another file', }"
 
 {% endmethod %}
 
+{% method %}
+## Finding a resource
+
+Finding a resource can be done by querying for the values of any of its properties.
+
+{% sample lang="bash" %}
+POST to `v1/find/resource/by` to do property value matches.
+
+```bash
+$ curl -X POST .../v1/find/resource/by -d "{ 'name': 'My .*', }"
+[{ 'name': 'My resource', 'id': '0xfo1' }]
+```
+
+{% endmethod %}
 
