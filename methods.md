@@ -130,17 +130,28 @@ Find activities occurring within a given time-frame.
 curl -X POST .../v1/find/activity/occurring -d "{ 'after': 123123123123, 'before': 123123123123 }"
 ```
 
+Either `after` and `before` can be omitted.
+
 {% endmethod %}
-
-
-
 
 {% method %}
 ### By related activities
 
+{% sample lang="bash" %}
+```bash
+curl -X POST .../v1/find/activity/continuedBy -d "{ 'activity': '0xba1' }"
+```
+
 {% endmethod %}
 
 {% method %}
-### By relation
+### By tag
+
+Find all activities tagged with one (or more) of the given tag-references.
+
+{% sample lang="bash" %}
+```bash
+curl -X POST .../v1/find/activity/tagged -d "{ 'tags': ['0xta1'] }"
+```
 
 {% endmethod %}
