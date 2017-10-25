@@ -24,6 +24,6 @@ The *participates* relation indicates that an individual is a participant in an 
 
 ## HasTag
 
-The *hastag* releation is a catch-all relation between a random non-Tag node and a Tag-node. It should be used sp  
+The *hastag* releation is a catch-all relation between a random non-Tag node and a Tag-node. It should be used sparingly and replaced with a stronger typed variant if possible.
 
 
