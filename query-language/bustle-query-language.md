@@ -1,3 +1,31 @@
 # Bustle Query Language
 
-TODODO
+## Activity examples
+
+```
+A = '1' AND -hastag->{name = 'MyTag'}
+```
+
+```
+A = '1' AND <-participates-[{name = 'Some individual name'},{name = 'Some other dude'}]
+```
+
+```
+A = '1' AND <-participates-['Some individual name', 'Some other dude']
+```
+
+
+```
+start >= 12312312 AND <-participates-['Some individual name', 'Some other dude']
+```
+
+Indicate that we want to follow the *continiues* relation a variable number of steps.
+
+```
+A = '1' AND -continues*->{name = 'MyTag'}
+```
+
+
+
+
+
