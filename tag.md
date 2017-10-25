@@ -48,4 +48,19 @@ $ curl -X PUT .../v1/tag/0xfo1 -d "{ 'name': 'Another tag', }"
 
 {% endmethod %}
 
+{% method %}
+## Get a tag by its name
+ 
+{% sample lang="bash" %}
+POST to `v1/find/tag/by` to do property value matches - specifically on name.
+
+```bash
+$ curl -X POST .../v1/find/tag/by -d "{ 'name': 'My tag', }"
+[{ 'name': 'My tag', 'id': '0xfo1' }]
+```
+
+{% endmethod %}
+
+
+
 
