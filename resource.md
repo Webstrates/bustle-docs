@@ -3,7 +3,7 @@
 A resource is an item defined by its URI. It can be a webpage, webstrate, local file or virtually any other form digital artefact.
 
 {% method %}
-## Creating resource
+## Creating a resource
 
 Creating an individual is is done in an HTTP POST request. A `name` and `email` are required for creating an individual. 
 
