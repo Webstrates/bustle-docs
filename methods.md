@@ -59,9 +59,10 @@ curl -X PUT .../v1/activity/0xab6 -d "{ 'start': 1507626697 }"
 
 Relate an existing activity to another entity is done with an HTTP PUT. The relation needs a type (or label), an origin and a destination. The origin and destination can only be of the types designated by the  The built-in relation-types are:
 
- * *activity* -- continues -> *activity* - the meaning here is that the activity is a continuation of a previous activity
- * *individual* -- participates -> *activity*
+ * *activity* -- continues --> *activity* - the meaning here is that the activity is a continuation of a previous activity
+ * *individual* -- participates --> *activity*
  * *activity* -- includes --> *resource*
+ * *anything* -- hastag --> *tag*
  
  
 Relations are one-way. This means that when activity A *continues* activity B then B **does not automatically** *continue* A. You can only create relations which originate in an activity on an activity.
