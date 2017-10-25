@@ -34,16 +34,16 @@ $ curl -X DELETE .../v1/tag/0xfo1
 
 
 {% method %}
-## Updating a resource
+## Updating a tag
 
 Updating a resource is is done in an HTTP PUT request. Supply `id` and `token` to update.
 
 {% sample lang="bash" %}
-A PUT to `v1/tag/<id>` will update the id'ed resource.
+A PUT to `v1/tag/<id>` will update the id'ed tag.
 
 ```bash
-$ curl -X PUT .../v1/tag/0xfo1 -d "{ 'name': 'Another file', }"
-{ 'name': 'Another file', 'url': 'https://somewhere.com/somefile.txt', 'id': '0xfo1' }
+$ curl -X PUT .../v1/tag/0xfo1 -d "{ 'name': 'Another tag', }"
+{ 'name': 'Anotheagr t', 'id': '0xfo1' }
 ```
 
 {% endmethod %}
