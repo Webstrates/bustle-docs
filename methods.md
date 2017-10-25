@@ -91,7 +91,7 @@ The query methods described here take their outset in the [query language](conte
 
 
 
-### By individual
+### By participation of individuals
 
 Find activities participated by certain individuals.
 
@@ -100,6 +100,8 @@ Find activities participated by certain individuals.
 #### Any
 
 Find activities in which any of the given participants have participated in. The union of all their activities in other words.
+
+{% sample lang="bash" %}
 
 ```bash
 curl -X POST .../v1/find/activity/participant/any -d "{ 'participants': ['0xfo0'] }"
@@ -112,6 +114,8 @@ curl -X POST .../v1/find/activity/participant/any -d "{ 'participants': ['0xfo0'
 #### All
 
 Find activities in which all the given participants have participated in. The shared set of all their activities in other words.
+
+{% sample lang="bash" %}
 
 ```bash
 curl -X POST .../v1/find/activity/participant/all -d "{ 'participants': ['0xfo0'] }"
