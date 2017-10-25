@@ -14,18 +14,15 @@ A = '1' AND <-participates-[{name = 'Some individual name'},{name = 'Some other 
 A = '1' AND <-participates-['Some individual name', 'Some other dude']
 ```
 
-
 ```
 start >= 12312312 AND <-participates-['Some individual name', 'Some other dude']
 ```
 
-Indicate that we want to follow the *continiues* relation a variable number of steps. TODO - can this be done?
+Indicate that we want to follow the _continues_ relation a variable number of steps. TODO - can this be done?
 
 ```
 A = '1' AND -continues*->{name = 'MyTag'}
 ```
-
-
 
 
 
