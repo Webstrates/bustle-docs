@@ -87,13 +87,38 @@ For a complete list of relations see the [Relations](content/relations.html) sec
 
 ## Finding activities
 
-TODO
+The query methods described here take their outset in the [query language](content/query-language/bustle-query-language.html) but adds a easier-to-use API layer for frequently used queries.
 
-{% method %}
+
 
 ### By individual
 
+Find activities participated by certain individuals.
+
+{% method %}
+
+#### Any
+
+Find activities in which any of the given participants have participated in. The union of all their activities in other words.
+
+```bash
+curl -X POST .../v1/find/activity/participant/any -d "{ 'participants': ['0xfo0'] }"
+```
+
 {% endmethod %}
+
+{% method %}
+
+#### All
+
+Find activities in which all the given participants have participated in. The shared set of all their activities in other words.
+
+```bash
+curl -X POST .../v1/find/activity/participant/all -d "{ 'participants': ['0xfo0'] }"
+```
+
+{% endmethod %}
+
 
 {% method %}
 
