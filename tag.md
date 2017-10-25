@@ -42,7 +42,7 @@ Updating a resource is is done in an HTTP PUT request. Supply `id` and `token` t
 A PUT to `v1/tag/<id>` will update the id'ed resource.
 
 ```bash
-$ curl -X PUT .../v1/resouce/0xfo1 -d "{ 'name': 'Another file', }"
+$ curl -X PUT .../v1/tag/0xfo1 -d "{ 'name': 'Another file', }"
 { 'name': 'Another file', 'url': 'https://somewhere.com/somefile.txt', 'id': '0xfo1' }
 ```
 
