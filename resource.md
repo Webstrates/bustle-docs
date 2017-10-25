@@ -42,7 +42,7 @@ $ curl -X DELETE .../v1/resource/0xfo1
 Updating a resource is is done in an HTTP PUT request. Supply `id` and `token` to update.
 
 {% sample lang="bash" %}
-A PUT to `v1/individual/<id>` will update the id'ed resource.
+A PUT to `v1/resource/<id>` will update the id'ed resource.
 
 ```bash
 $ curl -X PUT .../v1/resouce/0xfo1 -d "{ 'name': 'Another file', }"
