@@ -91,7 +91,6 @@ For a complete list of relations see the [Relations](content/relations.html) sec
 The query methods described here take their outset in the [query language](content/query-language/bustle-query-language.html) but adds a easier-to-use API layer for frequently used queries.
 
 
-
 ### By participation of individuals
 
 Find activities participated by certain individuals.
