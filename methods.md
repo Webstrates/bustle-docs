@@ -96,7 +96,6 @@ The query methods described here take their outset in the [query language](conte
 Find activities participated by certain individuals.
 
 {% method %}
-
 #### Any
 
 Find activities in which any of the given participants have participated in. The union of all their activities in other words.
@@ -110,34 +109,42 @@ curl -X POST .../v1/find/activity/participant/any -d "{ 'participants': ['0xfo0'
 {% endmethod %}
 
 {% method %}
-
 #### All
 
 Find activities in which all the given participants have participated in. The shared set of all their activities in other words.
 
 {% sample lang="bash" %}
-
 ```bash
 curl -X POST .../v1/find/activity/participant/all -d "{ 'participants': ['0xfo0'] }"
 ```
 
 {% endmethod %}
 
+### By time
+
+Find activities occurring within a given time-frame.
 
 {% method %}
+#### After
 
-### By time
+All activities occurring after the given time.
+
+{% sample lang="bash" %}
+```bash
+curl -X POST .../v1/find/activity/participant/all -d "{ 'participants': ['0xfo0'] }"
+```
+
+
+
 
 {% endmethod %}
 
 {% method %}
-
 ### By related activities
 
 {% endmethod %}
 
 {% method %}
-
 ### By relation
 
 {% endmethod %}
