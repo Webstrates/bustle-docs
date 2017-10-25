@@ -62,7 +62,7 @@ Relate an existing activity to another entity is done with an HTTP PUT. The rela
  * *activity* -- continues --> *activity* - the meaning here is that the activity is a continuation of a previous activity
  * *individual* -- participates --> *activity*
  * *activity* -- includes --> *resource*
- * *anything* -- hastag --> *tag*
+ * *activity* -- hastag --> *tag*
  
  
 Relations are one-way. This means that when activity A *continues* activity B then B **does not automatically** *continue* A. You can only create relations which originate in an activity on an activity.
